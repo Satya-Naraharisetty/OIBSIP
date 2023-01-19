@@ -1,3 +1,8 @@
+/*
+
+
+
+*/
 import java.util.*;
 
 class UserAccount {
@@ -61,7 +66,7 @@ class Withdrawing {
             Main1.Curr_Bal = Main1.Curr_Bal - Withdraw_value;
             Main1.Transfer.add("Amount withdrawn : ");
             Main1.Transfer.add(Integer.toString(Withdraw_value));
-            System.out.println("An Amount of " + Withdraw_value + "was withdrawn successfully.");
+            System.out.println("An Amount of " + Withdraw_value + " was withdrawn successfully.");
             System.out.println("####################################");
         } else {
             System.out.println("Insufficient funds, Please check your balance.");
@@ -177,7 +182,6 @@ public class Main1 {
         System.out.println("####################################");
         System.out.println("Enter your choice : ");
         int key = sc.nextInt();
-        sc.close();
         switch (key) {
             case 1:
                 Depositing.Deposit();
